@@ -1,0 +1,643 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background: #0f3b5c;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+.nav-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #0d9488;
+  color: white;
+}
+
+/* ===== Main Content ===== */
+main {
+  flex: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* ===== Hero ===== */
+.hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  color: #0f3b5c;
+  margin-bottom: 8px;
+}
+
+.hero p {
+  color: #64748b;
+  font-size: 16px;
+}
+
+/* ===== Search ===== */
+.search-section {
+  display: flex;
+  max-width: 640px;
+  margin: 0 auto 35px;
+  gap: 12px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#searchInput:focus {
+  border-color: #0d9488;
+}
+
+#searchBtn {
+  padding: 14px 28px;
+  background: #0d9488;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#searchBtn:hover {
+  background: #0f766e;
+}
+
+/* ===== Results / Cards ===== */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.programme-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  width: 340px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.programme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.card-header {
+  background: #0f3b5c;
+  color: white;
+  padding: 18px 20px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.card-header .university {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.indicators {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.indicator {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.indicator-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.icon-career { background: #ccfbf1; }
+.icon-difficulty { background: #fef3c7; }
+.icon-internship { background: #dbeafe; }
+
+.indicator-text h3 {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.indicator-text p {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+.btn {
+  flex: 1;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.btn-primary {
+  background: #0d9488;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0f766e;
+}
+
+.btn-secondary {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+/* ===== Other Pages ===== */
+.page-title {
+  font-size: 26px;
+  color: #0f3b5c;
+  margin-bottom: 8px;
+}
+
+.page-desc {
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.info-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.info-card h3 {
+  color: #0f3b5c;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+.info-card ul {
+  padding-left: 18px;
+  margin: 10px 0;
+}
+
+.info-card li {
+  margin-bottom: 6px;
+}
+
+.info-card .note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #64748b;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+}
+
+/* Graduate List */
+.graduate-list {
+  margin: 16px 0 24px;
+}
+
+.graduate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.graduate-item:last-child {
+  border-bottom: none;
+}
+
+.graduate-item .role {
+  font-weight: 600;
+  color: #0f3b5c;
+  font-size: 14px;
+}
+
+.graduate-item .company {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Pie Chart */
+.pie-section {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.pie-section h4 {
+  font-size: 14px;
+  color: #0f3b5c;
+  margin-bottom: 14px;
+}
+
+.pie-chart {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  background: conic-gradient(
+    #0d9488 0% 35%,
+    #3b82f6 35% 60%,
+    #f59e0b 60% 75%,
+    #8b5cf6 75% 90%,
+    #94a3b8 90% 100%
+  );
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pie-legend {
+  font-size: 13px;
+  color: #334155;
+}
+
+.pie-legend div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.tech { background: #0d9488; }
+.dot.telecom { background: #3b82f6; }
+.dot.power { background: #f59e0b; }
+.dot.finance { background: #8b5cf6; }
+.dot.others { background: #94a3b8; }
+
+/* Compare */
+.compare-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  align-items: center;
+}
+
+.compare-controls select {
+  padding: 10px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  min-width: 220px;
+}
+
+.compare-result {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.compare-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  width: 320px;
+  overflow: hidden;
+}
+
+.compare-card .card-header {
+  background: #0f3b5c;
+  color: white;
+  padding: 16px 18px;
+}
+
+.compare-card .card-body {
+  padding: 18px;
+}
+
+.compare-row {
+  margin-bottom: 14px;
+}
+
+.compare-row h4 {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.compare-row p {
+  font-size: 14px;
+}
+
+.coming-soon, .about-content {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  max-width: 700px;
+}
+
+.about-content ul {
+  margin: 16px 0;
+  padding-left: 20px;
+}
+
+.about-content li {
+  margin-bottom: 8px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #94a3b8;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0f3b5c;
+  color: #94a3b8;
+  text-align: center;
+  padding: 18px;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+  .search-section {
+    flex-direction: column;
+  }
+}
+/* ===== Main CityU EE Card on Home ===== */
+.main-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 700px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.home-note {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ===== Curriculum Table ===== */
+.curriculum-section h3 {
+  color: #0f3b5c;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+.course-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.course-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 80px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+  align-items: center;
+}
+
+.course-row.header {
+  background: #0f3b5c;
+  color: white;
+  font-weight: 600;
+}
+
+.course-row:last-child {
+  border-bottom: none;
+}
+
+.course-row:nth-child(even):not(.header) {
+  background: #f8fafc;
+}
+
+.notes-box {
+  background: #f0fdfa;
+  border-left: 4px solid #0d9488;
+  padding: 16px 20px;
+  margin-top: 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 14px;
+}
+
+.notes-box ul {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.notes-box li {
+  margin-bottom: 6px;
+}
+/* Language Button */
+.lang-switch {
+  margin-left: 16px;
+}
+
+.lang-btn {
+  background: #0d9488;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lang-btn:hover {
+  background: #0f766e;
+}
+
+/* Course List with Description */
+.course-list {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.course-item {
+  padding: 14px 18px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-item:nth-child(even) {
+  background: #f8fafc;
+}
+
+.course-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.course-code {
+  font-weight: 700;
+  color: #0f3b5c;
+  font-size: 14px;
+  min-width: 110px;
+}
+
+.course-title {
+  font-weight: 600;
+  color: #1e293b;
+  flex: 1;
+  margin-left: 12px;
+}
+
+.course-credit {
+  font-size: 13px;
+  color: #64748b;
+  background: #e2e8f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.course-desc {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+  margin-left: 122px;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityU EE Programme Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" data-i18n="logo">CityU EE Guide</div>
+      <ul class="nav-links">
+        <li><a href="#" class="active" data-page="home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#" data-page="curriculum" data-i18n="nav_curriculum">Curriculum</a></li>
+        <li><a href="#" data-page="career" data-i18n="nav_career">Career</a></li>
+        <li><a href="#" data-page="internships" data-i18n="nav_internships">Internships</a></li>
+        <li><a href="#" data-page="compare" data-i18n="nav_compare">Compare</a></li>
+        <li><a href="#" data-page="about" data-i18n="nav_about">About</a></li>
+      </ul>
+      <div class="lang-switch">
+        <button id="langBtn" class="lang-btn">繁體</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ==================== HOME ==================== -->
+    <section id="page-home" class="page active">
+      <header class="hero">
+        <h1 data-i18n="home_title">CityU Electronic & Electrical Engineering</h1>
+        <p data-i18n="home_subtitle">Quick guide for current students and JUPAS candidates</p>
+      </header>
+
+      <div class="main-card">
+        <div class="card-header">
+          <h2 data-i18n="card_title">BEng Electronic and Electrical Engineering</h2>
+          <div class="university">City University of Hong Kong (CityU)</div>
+        </div>
+        <div class="card-body">
+          <div class="indicators">
+            <div class="indicator">
+              <div class="indicator-icon icon-career">💼</div>
+              <div class="indicator-text">
+                <h3 data-i18n="label_career">Career Outcomes</h3>
+                <p data-i18n="card_career">High employment in electronics, telecom, power systems, semiconductors & AI-related roles. Accredited by HKIE.</p>
+              </div>
+            </div>
+            <div class="indicator">
+              <div class="indicator-icon icon-difficulty">📚</div>
+              <div class="indicator-text">
+                <h3 data-i18n="label_difficulty">Course Difficulty</h3>
+                <p data-i18n="card_difficulty">Medium–High (strong foundation in maths, physics, circuits and programming required)</p>
+              </div>
+            </div>
+            <div class="indicator">
+              <div class="indicator-icon icon-internship">🏢</div>
+              <div class="indicator-text">
+                <h3 data-i18n="label_internship">Internship Opportunities</h3>
+                <p data-i18n="card_internship">Professional Internship Program (EE4085/86/87) — 4 to 12 months with industry partners</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-actions">
+          <a href="https://www.ee.cityu.edu.hk/en/current_students/undergraduate/major/admission_beng-elel_majorcurriculum" target="_blank" class="btn btn-secondary" data-i18n="btn_official">Official Curriculum</a>
+          <button class="btn btn-primary" onclick="document.querySelector('[data-page=curriculum]').click()" data-i18n="btn_courses">View Course List</button>
+        </div>
+      </div>
+
+      <div class="home-note">
+        <p data-i18n="home_note">This guide is mainly designed for <strong>CityU EE students</strong>. JUPAS candidates can also use it to quickly understand the programme.</p>
+      </div>
+    </section>
+
+    <!-- ==================== CURRICULUM ==================== -->
+    <section id="page-curriculum" class="page">
+      <h2 class="page-title" data-i18n="curriculum_title">Curriculum Structure</h2>
+      <p class="page-desc" data-i18n="curriculum_desc">BEng Electronic and Electrical Engineering – Core Courses & Electives</p>
+
+      <!-- Core Courses -->
+      <div class="curriculum-section">
+        <h3 data-i18n="core_title">Core Courses (69 Credit Units)</h3>
+        <div class="course-list" id="coreCourses"></div>
+
+        <div class="notes-box">
+          <p><strong data-i18n="notes_title">Notes:</strong></p>
+          <ul>
+            <li data-i18n="note1"># EE2066 is counted as “College-specified GE Course” for 4-year degree students, but counted as “Major Requirement” for Advanced Standing I/II students.</li>
+            <li data-i18n="note2">★ Students having completed EE4085 Internship: Engineering Practice (3CUs) can use it to fulfill EE2066 and EE4090.</li>
+            <li data-i18n="note3">Students having completed FS4007 Start-up Technology Entrepreneur Programme I (3CUs) can use it to fulfill EE4090.</li>
+            <li data-i18n="note4">Students having completed EE4086 Internship: Advanced Topics (3CUs) can use it to fulfill one elective.</li>
+            <li data-i18n="note5">△ Students having completed EE4087 Internship: Industrial Project (6CUs) can use it to fulfill EE4080 Project.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Electives -->
+      <div class="curriculum-section" style="margin-top: 40px;">
+        <h3 data-i18n="elective_title">Elective Courses (at least 5 courses = 15 Credit Units)</h3>
+        <div class="course-list" id="electiveCourses"></div>
+      </div>
+    </section>
+
+    <!-- ==================== CAREER ==================== -->
+    <section id="page-career" class="page">
+      <h2 class="page-title" data-i18n="career_title">Career Outcomes</h2>
+      <p class="page-desc" data-i18n="career_desc">What kind of jobs can graduates get after studying CityU Electronic & Electrical Engineering?</p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3 data-i18n="career_left_title">CityU Electronic & Electrical Engineering</h3>
+          <p><strong data-i18n="common_paths">Common career paths:</strong></p>
+          <ul>
+            <li data-i18n="job1">Electronics / Hardware Engineer</li>
+            <li data-i18n="job2">Telecommunications Engineer</li>
+            <li data-i18n="job3">Power & Energy Systems Engineer</li>
+            <li data-i18n="job4">Semiconductor / IC Design Engineer</li>
+            <li data-i18n="job5">AI & Signal Processing related roles</li>
+            <li data-i18n="job6">Technical roles in finance & banking</li>
+          </ul>
+          <p class="note" data-i18n="career_note">Graduates work in both technical industries and the financial sector. The programme is accredited by the Hong Kong Institution of Engineers (HKIE).</p>
+        </div>
+
+        <div class="info-card">
+          <h3 data-i18n="graduate_title">Example Graduate Roles</h3>
+          <div class="graduate-list">
+            <div class="graduate-item"><span class="role" data-i18n="role1">Software Engineer</span><span class="company" data-i18n="comp1">Tech / FinTech companies</span></div>
+            <div class="graduate-item"><span class="role" data-i18n="role2">Hardware Engineer</span><span class="company" data-i18n="comp2">Electronics & semiconductor firms</span></div>
+            <div class="graduate-item"><span class="role" data-i18n="role3">Telecommunications Engineer</span><span class="company" data-i18n="comp3">Mobile network & telecom operators</span></div>
+            <div class="graduate-item"><span class="role" data-i18n="role4">Power Systems Engineer</span><span class="company" data-i18n="comp4">Power companies & energy sector</span></div>
+            <div class="graduate-item"><span class="role" data-i18n="role5">IC / Semiconductor Engineer</span><span class="company" data-i18n="comp5">Chip design & manufacturing</span></div>
+            <div class="graduate-item"><span class="role" data-i18n="role6">AI / Signal Processing Engineer</span><span class="company" data-i18n="comp6">AI, robotics & data companies</span></div>
+          </div>
+
+          <div class="pie-section">
+            <h4 data-i18n="pie_title">Approximate Employment Sectors</h4>
+            <div class="pie-chart"></div>
+            <div class="pie-legend">
+              <div><span class="dot tech"></span> <span data-i18n="pie1">Electronics & Tech (35%)</span></div>
+              <div><span class="dot telecom"></span> <span data-i18n="pie2">Telecom & Communications (25%)</span></div>
+              <div><span class="dot power"></span> <span data-i18n="pie3">Power & Energy (15%)</span></div>
+              <div><span class="dot finance"></span> <span data-i18n="pie4">Finance & Banking (15%)</span></div>
+              <div><span class="dot others"></span> <span data-i18n="pie5">Others / Further Study (10%)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== INTERNSHIPS ==================== -->
+    <section id="page-internships" class="page">
+      <h2 class="page-title" data-i18n="intern_title">Internship Opportunities</h2>
+      <p class="page-desc" data-i18n="intern_desc">Real internship programmes offered by CityU Electrical Engineering</p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h3 data-i18n="intern_left_title">CityU EE Professional Internship Program</h3>
+          <p data-i18n="intern_intro">The Department offers structured internship courses:</p>
+          <ul>
+            <li><strong>EE4085</strong> – <span data-i18n="ee4085">Internship: Engineering Practice (4 months)</span></li>
+            <li><strong>EE4086</strong> – <span data-i18n="ee4086">Internship: Advanced Topics</span></li>
+            <li><strong>EE4087</strong> – <span data-i18n="ee4087">Internship: Industrial Project (up to 12 months)</span></li>
+          </ul>
+          <p data-i18n="intern_note">These internships can replace some required courses.</p>
+        </div>
+
+        <div class="info-card">
+          <h3 data-i18n="partner_title">Example Partner Companies</h3>
+          <ul>
+            <li>Arrow Electronics</li>
+            <li>GP Electronics (HK) Limited</li>
+            <li>Sengital Limited</li>
+            <li>WIZnet HK Limited</li>
+            <li>Appcider Limited</li>
+            <li>Automated Systems (H.K.) Ltd</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COMPARE ==================== -->
+    <section id="page-compare" class="page">
+      <h2 class="page-title" data-i18n="compare_title">Compare Programmes</h2>
+      <p class="page-desc" data-i18n="compare_desc">Select two programmes to compare side by side</p>
+
+      <div class="compare-controls">
+        <select id="compare1"><option value="" data-i18n="select1">Select first programme</option></select>
+        <select id="compare2"><option value="" data-i18n="select2">Select second programme</option></select>
+        <button id="compareBtn" class="btn btn-primary" data-i18n="btn_compare">Compare</button>
+      </div>
+      <div id="compareResult" class="compare-result"></div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="page-about" class="page">
+      <h2 class="page-title" data-i18n="about_title">About This Guide</h2>
+      <div class="about-content">
+        <p data-i18n="about_p1">This guide is mainly designed for <strong>CityU EE students</strong> to quickly understand their programme structure, career paths and internship opportunities.</p>
+        <p data-i18n="about_p2">JUPAS candidates can also use it as a simple reference.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p data-i18n="footer">CityU EE Programme Guide · For students and JUPAS candidates</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
