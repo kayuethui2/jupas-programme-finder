@@ -35,7 +35,16 @@
         <p data-i18n="home_subtitle">Quick guide for current students and JUPAS candidates</p>
       </header>
 
+      <!-- Search Bar -->
+      <div class="search-section">
+        <input type="text" id="searchInput" placeholder="Search programme (e.g. CityU EE, HKU EE, PolyU EE)" />
+        <button id="searchBtn" data-i18n="btn_search">Search</button>
+      </div>
+      <div id="searchResults" class="results"></div>
+
+      <!-- Main CityU EE Card -->
       <div class="main-card">
+      
         <div class="card-header">
           <h2 data-i18n="card_title">BEng Electronic and Electrical Engineering</h2>
           <div class="university">City University of Hong Kong (CityU)</div>
@@ -70,6 +79,82 @@
           <button class="btn btn-primary" onclick="document.querySelector('[data-page=curriculum]').click()" data-i18n="btn_courses">View Course List</button>
         </div>
       </div>
+      <!-- CityU EE Detailed Information -->
+<div class="detail-section">
+  <h2 class="section-title" data-i18n="cityu_detail_title">More About CityU EE</h2>
+
+  <div class="detail-grid">
+
+    <!-- Programme Overview -->
+    <div class="detail-info-card">
+      <h3 data-i18n="cityu_overview_title">📘 Programme Overview</h3>
+      <ul>
+        <li data-i18n="cityu_overview_1">4-year full-time BEng programme</li>
+        <li data-i18n="cityu_overview_2">Accredited by the Hong Kong Institution of Engineers (HKIE)</li>
+        <li data-i18n="cityu_overview_3">Offered by the Department of Electrical Engineering, CityU</li>
+        <li data-i18n="cityu_overview_4">Strong focus on electronics, communications, power systems, and AI</li>
+      </ul>
+    </div>
+
+    <!-- Admission Requirements -->
+    <div class="detail-info-card">
+      <h3 data-i18n="cityu_admission_title">🎓 Admission Requirements</h3>
+      <ul>
+        <li data-i18n="cityu_admission_1">JUPAS: Best 5 subjects, including Maths and one science subject</li>
+        <li data-i18n="cityu_admission_2">English Language: Level 3 or above</li>
+        <li data-i18n="cityu_admission_3">Mathematics: Level 3 or above</li>
+        <li data-i18n="cityu_admission_4">Physics or Combined Science preferred</li>
+      </ul>
+    </div>
+
+    <!-- Programme Structure -->
+    <div class="detail-info-card">
+      <h3 data-i18n="cityu_structure_title">📚 Programme Structure</h3>
+      <ul>
+        <li data-i18n="cityu_structure_1">Core Courses: 69 credit units</li>
+        <li data-i18n="cityu_structure_2">Elective Courses: at least 15 credit units</li>
+        <li data-i18n="cityu_structure_3">Final Year Project (EE4080): 6 credit units</li>
+        <li data-i18n="cityu_structure_4">Internship options: EE4085 / EE4086 / EE4087</li>
+      </ul>
+    </div>
+
+    <!-- Career Prospects -->
+    <div class="detail-info-card">
+      <h3 data-i18n="cityu_career_title">💼 Career Prospects</h3>
+      <ul>
+        <li data-i18n="cityu_career_1">Electronics / Hardware Engineer</li>
+        <li data-i18n="cityu_career_2">Telecommunications Engineer</li>
+        <li data-i18n="cityu_career_3">Power & Energy Systems Engineer</li>
+        <li data-i18n="cityu_career_4">Semiconductor / IC Design Engineer</li>
+        <li data-i18n="cityu_career_5">AI & Signal Processing Engineer</li>
+      </ul>
+    </div>
+
+    <!-- Internship Partners -->
+    <div class="detail-info-card">
+      <h3 data-i18n="cityu_partner_title">🏢 Internship Partners</h3>
+      <ul>
+        <li>Arrow Electronics</li>
+        <li>GP Electronics (HK) Limited</li>
+        <li>Sengital Limited</li>
+        <li>WIZnet HK Limited</li>
+        <li>Automated Systems (H.K.) Ltd</li>
+      </ul>
+    </div>
+
+    <!-- Why Choose CityU EE -->
+    <div class="detail-info-card">
+      <h3 data-i18n="cityu_why_title">⭐ Why Choose CityU EE?</h3>
+      <ul>
+        <li data-i18n="cityu_why_1">HKIE-accredited programme with strong industry links</li>
+        <li data-i18n="cityu_why_2">Wide range of electives from AI to power systems</li>
+        <li data-i18n="cityu_why_3">Flexible internship options (4–12 months)</li>
+        <li data-i18n="cityu_why_4">Located in Kowloon Tong, easy access via MTR</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
 
       <div class="home-note">
         <p data-i18n="home_note">This guide is mainly designed for <strong>CityU EE students</strong>. JUPAS candidates can also use it to quickly understand the programme.</p>
@@ -81,7 +166,6 @@
       <h2 class="page-title" data-i18n="curriculum_title">Curriculum Structure</h2>
       <p class="page-desc" data-i18n="curriculum_desc">BEng Electronic and Electrical Engineering – Core Courses & Electives</p>
 
-      <!-- Core Courses -->
       <div class="curriculum-section">
         <h3 data-i18n="core_title">Core Courses (69 Credit Units)</h3>
         <div class="course-list" id="coreCourses"></div>
@@ -98,7 +182,6 @@
         </div>
       </div>
 
-      <!-- Electives -->
       <div class="curriculum-section" style="margin-top: 40px;">
         <h3 data-i18n="elective_title">Elective Courses (at least 5 courses = 15 Credit Units)</h3>
         <div class="course-list" id="electiveCourses"></div>
@@ -188,8 +271,8 @@
       <p class="page-desc" data-i18n="compare_desc">Select two programmes to compare side by side</p>
 
       <div class="compare-controls">
-        <select id="compare1"><option value="" data-i18n="select1">Select first programme</option></select>
-        <select id="compare2"><option value="" data-i18n="select2">Select second programme</option></select>
+        <select id="compare1"></select>
+        <select id="compare2"></select>
         <button id="compareBtn" class="btn btn-primary" data-i18n="btn_compare">Compare</button>
       </div>
       <div id="compareResult" class="compare-result"></div>
