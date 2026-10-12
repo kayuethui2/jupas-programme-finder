@@ -19,7 +19,45 @@ const i18n = {
     card_internship: "Professional Internship Program (EE4085/86/87) — 4 to 12 months with industry partners",
     btn_official: "Official Curriculum",
     btn_courses: "View Course List",
+    btn_search: "Search",
     home_note: "This guide is mainly designed for <strong>CityU EE students</strong>. JUPAS candidates can also use it to quickly understand the programme.",
+
+    // CityU EE Detail Section
+    cityu_detail_title: "More About CityU EE",
+
+    cityu_overview_title: "📘 Programme Overview",
+    cityu_overview_1: "4-year full-time BEng programme",
+    cityu_overview_2: "Accredited by the Hong Kong Institution of Engineers (HKIE)",
+    cityu_overview_3: "Offered by the Department of Electrical Engineering, CityU",
+    cityu_overview_4: "Strong focus on electronics, communications, power systems, and AI",
+
+    cityu_admission_title: "🎓 Admission Requirements",
+    cityu_admission_1: "JUPAS: Best 5 subjects, including Maths and one science subject",
+    cityu_admission_2: "English Language: Level 3 or above",
+    cityu_admission_3: "Mathematics: Level 3 or above",
+    cityu_admission_4: "Physics or Combined Science preferred",
+
+    cityu_structure_title: "📚 Programme Structure",
+    cityu_structure_1: "Core Courses: 69 credit units",
+    cityu_structure_2: "Elective Courses: at least 15 credit units",
+    cityu_structure_3: "Final Year Project (EE4080): 6 credit units",
+    cityu_structure_4: "Internship options: EE4085 / EE4086 / EE4087",
+
+    cityu_career_title: "💼 Career Prospects",
+    cityu_career_1: "Electronics / Hardware Engineer",
+    cityu_career_2: "Telecommunications Engineer",
+    cityu_career_3: "Power & Energy Systems Engineer",
+    cityu_career_4: "Semiconductor / IC Design Engineer",
+    cityu_career_5: "AI & Signal Processing Engineer",
+
+    cityu_partner_title: "🏢 Internship Partners",
+
+    cityu_why_title: "⭐ Why Choose CityU EE?",
+    cityu_why_1: "HKIE-accredited programme with strong industry links",
+    cityu_why_2: "Wide range of electives from AI to power systems",
+    cityu_why_3: "Flexible internship options (4–12 months)",
+    cityu_why_4: "Located in Kowloon Tong, easy access via MTR",
+
     curriculum_title: "Curriculum Structure",
     curriculum_desc: "BEng Electronic and Electrical Engineering – Core Courses & Electives",
     core_title: "Core Courses (69 Credit Units)",
@@ -71,7 +109,13 @@ const i18n = {
     about_title: "About This Guide",
     about_p1: "This guide is mainly designed for <strong>CityU EE students</strong> to quickly understand their programme structure, career paths and internship opportunities.",
     about_p2: "JUPAS candidates can also use it as a simple reference.",
-    footer: "CityU EE Programme Guide · For students and JUPAS candidates"
+    footer: "CityU EE Programme Guide · For students and JUPAS candidates",
+    back_btn: "← Back to Course List",
+    assessment: "Assessment",
+    workload: "Workload",
+    mean_gpa: "Mean GPA",
+    comments: "Comments",
+    add_comment: "Add Comment"
   },
   zh: {
     logo: "城大電機工程指南",
@@ -92,7 +136,45 @@ const i18n = {
     card_internship: "專業實習計劃（EE4085/86/87）— 為期4至12個月，與業界合作",
     btn_official: "官方課程",
     btn_courses: "查看課程列表",
+    btn_search: "搜尋",
     home_note: "本指南主要為<strong>城大電機工程學生</strong>而設，JUPAS申請人亦可使用以快速了解課程。",
+
+    // CityU EE Detail Section
+    cityu_detail_title: "更多關於城大電機工程",
+
+    cityu_overview_title: "📘 課程概覽",
+    cityu_overview_1: "四年全日制工學士課程",
+    cityu_overview_2: "獲香港工程師學會（HKIE）認可",
+    cityu_overview_3: "由城大電機工程學系開辦",
+    cityu_overview_4: "專注電子、通訊、電力系統及人工智能",
+
+    cityu_admission_title: "🎓 入學要求",
+    cityu_admission_1: "JUPAS：最佳五科，包括數學及一科科學",
+    cityu_admission_2: "英語：第3級或以上",
+    cityu_admission_3: "數學：第3級或以上",
+    cityu_admission_4: "優先考慮物理或組合科學",
+
+    cityu_structure_title: "📚 課程結構",
+    cityu_structure_1: "核心課程：69學分",
+    cityu_structure_2: "選修課程：至少15學分",
+    cityu_structure_3: "畢業專題（EE4080）：6學分",
+    cityu_structure_4: "實習選項：EE4085 / EE4086 / EE4087",
+
+    cityu_career_title: "💼 就業前景",
+    cityu_career_1: "電子／硬件工程師",
+    cityu_career_2: "電訊工程師",
+    cityu_career_3: "電力及能源系統工程師",
+    cityu_career_4: "半導體／IC設計工程師",
+    cityu_career_5: "人工智能及信號處理工程師",
+
+    cityu_partner_title: "🏢 實習合作公司",
+
+    cityu_why_title: "⭐ 為何選擇城大電機工程？",
+    cityu_why_1: "獲HKIE認可，與業界聯繫緊密",
+    cityu_why_2: "選修科目涵蓋人工智能至電力系統",
+    cityu_why_3: "彈性實習選項（4至12個月）",
+    cityu_why_4: "位於九龍塘，港鐵直達",
+
     curriculum_title: "課程結構",
     curriculum_desc: "工學士（電子及電機工程學）– 核心課程及選修課程",
     core_title: "核心課程（69學分）",
@@ -144,73 +226,155 @@ const i18n = {
     about_title: "關於本指南",
     about_p1: "本指南主要為<strong>城大電機工程學生</strong>而設，幫助快速了解課程結構、就業前景及實習機會。",
     about_p2: "JUPAS申請人亦可作為簡單參考。",
-    footer: "城大電機工程指南 · 為學生及JUPAS申請人而設"
+    footer: "城大電機工程指南 · 為學生及JUPAS申請人而設",
+    back_btn: "← 返回課程列表",
+    assessment: "評估方式",
+    workload: "工作量",
+    mean_gpa: "平均 GPA",
+    comments: "學生評論",
+    add_comment: "新增評論"
   }
 };
 
-// ========== Course Data with Descriptions ==========
+// ========== Other University EE Programmes ==========
+const otherProgrammes = [
+  {
+    id: "cityu-ee",
+    name: "CityU EE",
+    fullName: "BEng Electronic and Electrical Engineering",
+    university: "City University of Hong Kong",
+    career: "High employment in electronics, telecom, power systems, semiconductors & AI-related roles. Accredited by HKIE.",
+    difficulty: "Medium–High (strong foundation in maths, physics, circuits and programming required)",
+    internship: "Professional Internship Program (EE4085/86/87) — 4 to 12 months with industry partners",
+    link: "https://www.ee.cityu.edu.hk/en/current_students/undergraduate/major/admission_beng-elel_majorcurriculum"
+  },
+  {
+    id: "hku-ee",
+    name: "HKU EE",
+    fullName: "BEng Electrical and Electronic Engineering",
+    university: "The University of Hong Kong",
+    career: "Strong graduate outcomes in power, communications, electronics, and fintech. Accredited by HKIE.",
+    difficulty: "High (rigorous maths, physics, and programming foundation required)",
+    internship: "Internship opportunities with CLP, HK Electric, Huawei, and other industry partners.",
+    link: "https://www.eee.hku.hk/"
+  },
+  {
+    id: "polyu-ee",
+    name: "PolyU EE",
+    fullName: "BEng Electrical Engineering",
+    university: "The Hong Kong Polytechnic University",
+    career: "Graduates work in power, railway, telecom, and building services. Strong industry links.",
+    difficulty: "Medium–High (emphasis on practical engineering and hands-on projects)",
+    internship: "Work-integrated education (WIE) with MTR, CLP, and engineering firms.",
+    link: "https://www.polyu.edu.hk/eee/"
+  },
+  {
+    id: "cuhk-ee",
+    name: "CUHK EE",
+    fullName: "BEng Electronic Engineering",
+    university: "The Chinese University of Hong Kong",
+    career: "Graduates work in electronics, communications, AI, and healthcare technology. Strong research-oriented training.",
+    difficulty: "High (strong emphasis on mathematics, physics, and programming)",
+    internship: "Summer internship programmes with tech companies and research labs.",
+    link: "https://www.ee.cuhk.edu.hk/"
+  },
+  {
+    id: "ust-ee",
+    name: "UST EE",
+    fullName: "BEng Electronic and Computer Engineering",
+    university: "The Hong Kong University of Science and Technology",
+    career: "Strong outcomes in semiconductors, AI, robotics, and fintech. High employability in tech sector.",
+    difficulty: "High (rigorous engineering and computing foundation required)",
+    internship: "Internship opportunities with Huawei, DJI, and global tech firms.",
+    link: "https://ece.hkust.edu.hk/"
+  }
+];
+
+// ========== Course Data ==========
 const coreCourses = [
-  { code: "EE1001", title: "Foundations of Digital Techniques", titleZh: "數碼技術基礎", desc: "Introduces number systems, Boolean algebra, logic gates and basic digital circuits.", descZh: "介紹數字系統、布爾代數、邏輯閘及基本數碼電路。", credit: 3 },
-  { code: "EE1002", title: "Principles of Electrical Engineering", titleZh: "電機工程原理", desc: "Covers fundamental electrical concepts: voltage, current, resistance, power and basic circuit laws.", descZh: "涵蓋基本電學概念：電壓、電流、電阻、功率及基本電路定律。", credit: 3 },
-  { code: "EE1004", title: "Foundations of Information Systems and Data Analysis", titleZh: "資訊系統及數據分析基礎", desc: "Introduces basic data handling, information systems and simple data analysis techniques.", descZh: "介紹基本數據處理、資訊系統及簡單數據分析技術。", credit: 3 },
-  { code: "GE1354", title: "Introduction to Electronic Design", titleZh: "電子設計導論", desc: "Hands-on introduction to electronic design principles and simple circuit building.", descZh: "透過實踐介紹電子設計原理及簡單電路製作。", credit: 3 },
-  { code: "EE2000", title: "Logic Circuit Design", titleZh: "邏輯電路設計", desc: "Design of combinational and sequential logic circuits using modern digital techniques.", descZh: "使用現代數碼技術設計組合及時序邏輯電路。", credit: 3 },
-  { code: "EE2004", title: "Microcomputer Systems", titleZh: "微電腦系統", desc: "Fundamentals of microcomputer architecture, assembly language and interfacing.", descZh: "微電腦架構、組合語言及介面的基礎知識。", credit: 3 },
-  { code: "EE2005", title: "Electronic Devices and Circuits", titleZh: "電子器件及電路", desc: "Study of diodes, transistors and basic analogue electronic circuits.", descZh: "研習二極體、電晶體及基本模擬電子電路。", credit: 3 },
-  { code: "EE2066", title: "Engineers in Society", titleZh: "工程師與社會", desc: "Explores the role of engineers in society, ethics, sustainability and professional practice.", descZh: "探討工程師在社會中的角色、倫理、可持續發展及專業實踐。", credit: 3 },
-  { code: "EE2104", title: "Introduction to Electromagnetics", titleZh: "電磁學導論", desc: "Basic concepts of electric and magnetic fields and their applications in engineering.", descZh: "電場及磁場的基本概念及其在工程上的應用。", credit: 3 },
-  { code: "EE2108", title: "Computational Engineering Analysis", titleZh: "計算工程分析", desc: "Uses computational tools to analyse engineering problems and data.", descZh: "使用計算工具分析工程問題及數據。", credit: 3 },
-  { code: "EE3008", title: "Principles of Communications", titleZh: "通訊原理", desc: "Fundamentals of analogue and digital communication systems.", descZh: "模擬及數碼通訊系統的基本原理。", credit: 3 },
-  { code: "EE3070", title: "Design Project", titleZh: "設計專題", desc: "Team-based design project solving real engineering problems.", descZh: "以小組形式進行設計專題，解決實際工程問題。", credit: 3 },
-  { code: "EE3109", title: "Applied Electromagnetics", titleZh: "應用電磁學", desc: "Advanced applications of electromagnetic theory in engineering systems.", descZh: "電磁理論在工程系統中的進階應用。", credit: 3 },
-  { code: "EE3114", title: "Systems & Control", titleZh: "系統與控制", desc: "Modelling and control of dynamic systems, feedback and stability.", descZh: "動態系統的建模與控制、反饋及穩定性。", credit: 3 },
-  { code: "EE3115", title: "Applied Optoelectronic Devices", titleZh: "應用光電子器件", desc: "Principles and applications of optoelectronic devices (LEDs, lasers, photodetectors).", descZh: "光電子器件（LED、激光、光探測器）的原理及應用。", credit: 3 },
-  { code: "EE3121", title: "Differential Equations for Electrical Engineering", titleZh: "電機工程微分方程", desc: "Mathematical methods for solving differential equations in EE problems.", descZh: "解決電機工程問題中微分方程的數學方法。", credit: 3 },
-  { code: "EE3122", title: "Analogue Circuit Fundamentals", titleZh: "模擬電路基礎", desc: "Design and analysis of analogue circuits including amplifiers and filters.", descZh: "模擬電路（包括放大器及濾波器）的設計與分析。", credit: 3 },
-  { code: "EE3123", title: "Introduction to Electric Power Systems", titleZh: "電力系統導論", desc: "Basics of power generation, transmission, distribution and power system components.", descZh: "發電、輸電、配電及電力系統元件的基礎知識。", credit: 3 },
-  { code: "EE3124", title: "Introduction to Electric Machines and Drives", titleZh: "電機及驅動導論", desc: "Principles of electric machines (motors & generators) and drive systems.", descZh: "電機（馬達及發電機）及驅動系統的原理。", credit: 3 },
-  { code: "EE3210", title: "Signals and Systems", titleZh: "信號與系統", desc: "Analysis of continuous and discrete-time signals and linear systems.", descZh: "連續及離散時間信號與線性系統的分析。", credit: 3 },
-  { code: "EE4080", title: "Project", titleZh: "專題研究", desc: "Final Year Project – independent research or design work under supervision.", descZh: "畢業專題 – 在指導下進行獨立研究或設計工作。", credit: 6 },
-  { code: "EE4090", title: "Engineering Training", titleZh: "工程訓練", desc: "Practical engineering training (can be fulfilled by internship).", descZh: "實務工程訓練（可由實習取代）。", credit: 0 },
-  { code: "CS2311", title: "Computer Programming", titleZh: "電腦程式設計", desc: "Programming fundamentals for engineering applications.", descZh: "工程應用的程式設計基礎。", credit: 3 },
-  { code: "MA2001", title: "Multi-variable Calculus and Linear Algebra", titleZh: "多變量微積分及線性代數", desc: "Advanced mathematics needed for engineering analysis.", descZh: "工程分析所需的高等數學。", credit: 3 }
+  { code: "EE1001", title: "Foundations of Digital Techniques", titleZh: "數碼技術基礎", desc: "Introduces number systems, Boolean algebra, logic gates and basic digital circuits.", descZh: "介紹數字系統、布爾代數、邏輯閘及基本數碼電路。", credit: 3, workload: 3.1, gpa: 3.05 },
+  { code: "EE1002", title: "Principles of Electrical Engineering", titleZh: "電機工程原理", desc: "Covers fundamental electrical concepts: voltage, current, resistance, power and basic circuit laws.", descZh: "涵蓋基本電學概念：電壓、電流、電阻、功率及基本電路定律。", credit: 3, workload: 3.3, gpa: 2.95 },
+  { code: "EE1004", title: "Foundations of Information Systems and Data Analysis", titleZh: "資訊系統及數據分析基礎", desc: "Introduces basic data handling, information systems and simple data analysis techniques.", descZh: "介紹基本數據處理、資訊系統及簡單數據分析技術。", credit: 3, workload: 2.8, gpa: 3.15 },
+  { code: "GE1354", title: "Introduction to Electronic Design", titleZh: "電子設計導論", desc: "Hands-on introduction to electronic design principles and simple circuit building.", descZh: "透過實踐介紹電子設計原理及簡單電路製作。", credit: 3, workload: 2.9, gpa: 3.20 },
+  { code: "EE2000", title: "Logic Circuit Design", titleZh: "邏輯電路設計", desc: "Design of combinational and sequential logic circuits using modern digital techniques.", descZh: "使用現代數碼技術設計組合及時序邏輯電路。", credit: 3, workload: 3.4, gpa: 2.88 },
+  { code: "EE2004", title: "Microcomputer Systems", titleZh: "微電腦系統", desc: "Fundamentals of microcomputer architecture, assembly language and interfacing.", descZh: "微電腦架構、組合語言及介面的基礎知識。", credit: 3, workload: 3.5, gpa: 2.75 },
+  { code: "EE2005", title: "Electronic Devices and Circuits", titleZh: "電子器件及電路", desc: "Study of diodes, transistors and basic analogue electronic circuits.", descZh: "研習二極體、電晶體及基本模擬電子電路。", credit: 3, workload: 3.6, gpa: 2.70 },
+  { code: "EE2066", title: "Engineers in Society", titleZh: "工程師與社會", desc: "Explores the role of engineers in society, ethics, sustainability and professional practice.", descZh: "探討工程師在社會中的角色、倫理、可持續發展及專業實踐。", credit: 3, workload: 2.4, gpa: 3.40 },
+  { code: "EE2104", title: "Introduction to Electromagnetics", titleZh: "電磁學導論", desc: "Basic concepts of electric and magnetic fields and their applications in engineering.", descZh: "電場及磁場的基本概念及其在工程上的應用。", credit: 3, workload: 3.7, gpa: 2.65 },
+  { code: "EE2108", title: "Computational Engineering Analysis", titleZh: "計算工程分析", desc: "Uses computational tools to analyse engineering problems and data.", descZh: "使用計算工具分析工程問題及數據。", credit: 3, workload: 3.2, gpa: 3.00 },
+  { code: "EE3008", title: "Principles of Communications", titleZh: "通訊原理", desc: "Fundamentals of analogue and digital communication systems.", descZh: "模擬及數碼通訊系統的基本原理。", credit: 3, workload: 3.5, gpa: 2.80 },
+  { code: "EE3070", title: "Design Project", titleZh: "設計專題", desc: "Team-based design project solving real engineering problems.", descZh: "以小組形式進行設計專題，解決實際工程問題。", credit: 3, workload: 3.8, gpa: 3.10 },
+  { code: "EE3109", title: "Applied Electromagnetics", titleZh: "應用電磁學", desc: "Advanced applications of electromagnetic theory in engineering systems.", descZh: "電磁理論在工程系統中的進階應用。", credit: 3, workload: 3.9, gpa: 2.60 },
+  { code: "EE3114", title: "Systems & Control", titleZh: "系統與控制", desc: "Modelling and control of dynamic systems, feedback and stability.", descZh: "動態系統的建模與控制、反饋及穩定性。", credit: 3, workload: 3.6, gpa: 2.85 },
+  { code: "EE3115", title: "Applied Optoelectronic Devices", titleZh: "應用光電子器件", desc: "Principles and applications of optoelectronic devices (LEDs, lasers, photodetectors).", descZh: "光電子器件（LED、激光、光探測器）的原理及應用。", credit: 3, workload: 3.3, gpa: 2.95 },
+  { code: "EE3121", title: "Differential Equations for Electrical Engineering", titleZh: "電機工程微分方程", desc: "Mathematical methods for solving differential equations in EE problems.", descZh: "解決電機工程問題中微分方程的數學方法。", credit: 3, workload: 3.4, gpa: 2.90 },
+  { code: "EE3122", title: "Analogue Circuit Fundamentals", titleZh: "模擬電路基礎", desc: "Design and analysis of analogue circuits including amplifiers and filters.", descZh: "模擬電路（包括放大器及濾波器）的設計與分析。", credit: 3, workload: 3.7, gpa: 2.70 },
+  { code: "EE3123", title: "Introduction to Electric Power Systems", titleZh: "電力系統導論", desc: "Basics of power generation, transmission, distribution and power system components.", descZh: "發電、輸電、配電及電力系統元件的基礎知識。", credit: 3, workload: 3.2, gpa: 3.05 },
+  { code: "EE3124", title: "Introduction to Electric Machines and Drives", titleZh: "電機及驅動導論", desc: "Principles of electric machines (motors & generators) and drive systems.", descZh: "電機（馬達及發電機）及驅動系統的原理。", credit: 3, workload: 3.3, gpa: 2.98 },
+  { code: "EE3210", title: "Signals and Systems", titleZh: "信號與系統", desc: "Analysis of continuous and discrete-time signals and linear systems.", descZh: "連續及離散時間信號與線性系統的分析。", credit: 3, workload: 3.8, gpa: 2.55 },
+  { code: "EE4080", title: "Project", titleZh: "專題研究", desc: "Final Year Project – independent research or design work under supervision.", descZh: "畢業專題 – 在指導下進行獨立研究或設計工作。", credit: 6, workload: 4.2, gpa: 3.25 },
+  { code: "EE4090", title: "Engineering Training", titleZh: "工程訓練", desc: "Practical engineering training (can be fulfilled by internship).", descZh: "實務工程訓練（可由實習取代）。", credit: 0, workload: 2.0, gpa: 3.50 },
+  { code: "CS2311", title: "Computer Programming", titleZh: "電腦程式設計", desc: "Programming fundamentals for engineering applications.", descZh: "工程應用的程式設計基礎。", credit: 3, workload: 3.0, gpa: 3.10 },
+  { code: "MA2001", title: "Multi-variable Calculus and Linear Algebra", titleZh: "多變量微積分及線性代數", desc: "Advanced mathematics needed for engineering analysis.", descZh: "工程分析所需的高等數學。", credit: 3, workload: 3.5, gpa: 2.80 }
 ];
 
 const electiveCourses = [
-  { code: "EE2331", title: "Data Structures and Algorithms", titleZh: "數據結構與算法", desc: "Common data structures and algorithms used in engineering software.", descZh: "工程軟件常用的數據結構與算法。", credit: 3 },
-  { code: "EE2800", title: "Semiconductor Physics for Engineers", titleZh: "工程師半導體物理", desc: "Physics of semiconductor materials and devices.", descZh: "半導體材料及器件的物理學。", credit: 3 },
-  { code: "EE3009", title: "Data Communications and Networking", titleZh: "數據通訊與網絡", desc: "Principles of computer networks and data communication protocols.", descZh: "電腦網絡及數據通訊協議的原理。", credit: 3 },
-  { code: "EE3206", title: "Object-Oriented Programming and Applications", titleZh: "物件導向程式設計及應用", desc: "Object-oriented programming concepts and practical applications.", descZh: "物件導向程式設計概念及實際應用。", credit: 3 },
-  { code: "EE3220", title: "System-on-Chip Design", titleZh: "系統單晶片設計", desc: "Design of complex digital systems on a single chip (SoC).", descZh: "在單一晶片上設計複雜數碼系統（SoC）。", credit: 3 },
-  { code: "EE4015 / EE5410", title: "Digital Signal Processing", titleZh: "數碼信號處理", desc: "Techniques for processing digital signals (filtering, FFT, etc.).", descZh: "處理數碼信號的技術（濾波、FFT等）。", credit: 3 },
-  { code: "EE4016 / EE5438", title: "Applications of AI with Deep Learning", titleZh: "深度學習人工智能應用", desc: "Practical applications of deep learning in engineering problems.", descZh: "深度學習在工程問題上的實際應用。", credit: 3 },
-  { code: "EE4017", title: "Internet Finance", titleZh: "互聯網金融", desc: "Technology and systems behind fintech and internet finance.", descZh: "金融科技及互聯網金融背後的技術與系統。", credit: 3 },
-  { code: "EE4035", title: "Optical Fibre Communications", titleZh: "光纖通訊", desc: "Principles of optical fibre communication systems.", descZh: "光纖通訊系統的原理。", credit: 3 },
-  { code: "EE4036", title: "Wireless Communications", titleZh: "無線通訊", desc: "Modern wireless communication technologies and systems.", descZh: "現代無線通訊技術及系統。", credit: 3 },
-  { code: "EE4045", title: "Computer Controlled Systems", titleZh: "電腦控制系統", desc: "Design of computer-based control systems.", descZh: "基於電腦的控制系統設計。", credit: 3 },
-  { code: "EE4101", title: "Sustainable Energy Systems", titleZh: "可持續能源系統", desc: "Renewable energy systems and sustainable power technologies.", descZh: "可再生能源系統及可持續電力技術。", credit: 3 },
-  { code: "EE4105", title: "Principles of Lasers", titleZh: "激光原理", desc: "Working principles and applications of lasers.", descZh: "激光的工作原理及應用。", credit: 3 },
-  { code: "EE4107", title: "5G Circuit Design", titleZh: "5G電路設計", desc: "Circuit design techniques for 5G wireless systems.", descZh: "5G無線系統的電路設計技術。", credit: 3 },
-  { code: "EE4108", title: "Antennas for Wireless Communications and Sensing", titleZh: "無線通訊及感測天線", desc: "Antenna design for wireless communication and sensing applications.", descZh: "無線通訊及感測應用的天線設計。", credit: 3 },
-  { code: "EE4115", title: "Audio-Visual Engineering", titleZh: "影音工程", desc: "Engineering principles of audio and video systems.", descZh: "音頻及視頻系統的工程原理。", credit: 3 },
-  { code: "EE4142", title: "Introduction to Integrated Photonics", titleZh: "集成光子學導論", desc: "Basics of photonic integrated circuits.", descZh: "光子集成電路的基礎知識。", credit: 3 },
-  { code: "EE4146", title: "Data Engineering and Machine Learning", titleZh: "數據工程及機器學習", desc: "Data processing pipelines and machine learning applications.", descZh: "數據處理流程及機器學習應用。", credit: 3 },
-  { code: "EE4147", title: "Grid-Connected Power Converters", titleZh: "併網電力轉換器", desc: "Power electronic converters used in grid-connected systems.", descZh: "用於併網系統的電力電子轉換器。", credit: 3 },
-  { code: "EE4148", title: "Advanced Power System", titleZh: "進階電力系統", desc: "Advanced topics in electric power systems analysis and operation.", descZh: "電力系統分析及運作的進階主題。", credit: 3 },
-  { code: "EE4149", title: "Power Electronics", titleZh: "電力電子學", desc: "Design and control of power electronic converters.", descZh: "電力電子轉換器的設計與控制。", credit: 3 },
-  { code: "EE4221", title: "Cloud Computing Systems", titleZh: "雲端運算系統", desc: "Architecture and technologies of cloud computing systems.", descZh: "雲端運算系統的架構及技術。", credit: 3 },
-  { code: "EE4316", title: "Mobile Data Networks", titleZh: "流動數據網絡", desc: "Technologies and protocols used in mobile data networks.", descZh: "流動數據網絡使用的技術及協議。", credit: 3 }
+  { code: "EE2331", title: "Data Structures and Algorithms", titleZh: "數據結構與算法", desc: "Common data structures and algorithms used in engineering software.", descZh: "工程軟件常用的數據結構與算法。", credit: 3, workload: 3.4, gpa: 2.90 },
+  { code: "EE2800", title: "Semiconductor Physics for Engineers", titleZh: "工程師半導體物理", desc: "Physics of semiconductor materials and devices.", descZh: "半導體材料及器件的物理學。", credit: 3, workload: 3.6, gpa: 2.75 },
+  { code: "EE3009", title: "Data Communications and Networking", titleZh: "數據通訊與網絡", desc: "Principles of computer networks and data communication protocols.", descZh: "電腦網絡及數據通訊協議的原理。", credit: 3, workload: 3.2, gpa: 3.00 },
+  { code: "EE3206", title: "Object-Oriented Programming and Applications", titleZh: "物件導向程式設計及應用", desc: "Object-oriented programming concepts and practical applications.", descZh: "物件導向程式設計概念及實際應用。", credit: 3, workload: 3.1, gpa: 3.15 },
+  { code: "EE3220", title: "System-on-Chip Design", titleZh: "系統單晶片設計", desc: "Design of complex digital systems on a single chip (SoC).", descZh: "在單一晶片上設計複雜數碼系統（SoC）。", credit: 3, workload: 3.8, gpa: 2.70 },
+  { code: "EE4015 / EE5410", title: "Digital Signal Processing", titleZh: "數碼信號處理", desc: "Techniques for processing digital signals (filtering, FFT, etc.).", descZh: "處理數碼信號的技術（濾波、FFT等）。", credit: 3, workload: 3.7, gpa: 2.65 },
+  { code: "EE4016 / EE5438", title: "Applications of AI with Deep Learning", titleZh: "深度學習人工智能應用", desc: "Practical applications of deep learning in engineering problems.", descZh: "深度學習在工程問題上的實際應用。", credit: 3, workload: 3.5, gpa: 3.05 },
+  { code: "EE4017", title: "Internet Finance", titleZh: "互聯網金融", desc: "Technology and systems behind fintech and internet finance.", descZh: "金融科技及互聯網金融背後的技術與系統。", credit: 3, workload: 2.7, gpa: 3.30 },
+  { code: "EE4035", title: "Optical Fibre Communications", titleZh: "光纖通訊", desc: "Principles of optical fibre communication systems.", descZh: "光纖通訊系統的原理。", credit: 3, workload: 3.3, gpa: 2.95 },
+  { code: "EE4036", title: "Wireless Communications", titleZh: "無線通訊", desc: "Modern wireless communication technologies and systems.", descZh: "現代無線通訊技術及系統。", credit: 3, workload: 3.4, gpa: 2.85 },
+  { code: "EE4045", title: "Computer Controlled Systems", titleZh: "電腦控制系統", desc: "Design of computer-based control systems.", descZh: "基於電腦的控制系統設計。", credit: 3, workload: 3.5, gpa: 2.90 },
+  { code: "EE4101", title: "Sustainable Energy Systems", titleZh: "可持續能源系統", desc: "Renewable energy systems and sustainable power technologies.", descZh: "可再生能源系統及可持續電力技術。", credit: 3, workload: 3.0, gpa: 3.20 },
+  { code: "EE4105", title: "Principles of Lasers", titleZh: "激光原理", desc: "Working principles and applications of lasers.", descZh: "激光的工作原理及應用。", credit: 3, workload: 3.2, gpa: 3.00 },
+  { code: "EE4107", title: "5G Circuit Design", titleZh: "5G電路設計", desc: "Circuit design techniques for 5G wireless systems.", descZh: "5G無線系統的電路設計技術。", credit: 3, workload: 3.6, gpa: 2.80 },
+  { code: "EE4108", title: "Antennas for Wireless Communications and Sensing", titleZh: "無線通訊及感測天線", desc: "Antenna design for wireless communication and sensing applications.", descZh: "無線通訊及感測應用的天線設計。", credit: 3, workload: 3.5, gpa: 2.85 },
+  { code: "EE4115", title: "Audio-Visual Engineering", titleZh: "影音工程", desc: "Engineering principles of audio and video systems.", descZh: "音頻及視頻系統的工程原理。", credit: 3, workload: 2.9, gpa: 3.15 },
+  { code: "EE4142", title: "Introduction to Integrated Photonics", titleZh: "集成光子學導論", desc: "Basics of photonic integrated circuits.", descZh: "光子集成電路的基礎知識。", credit: 3, workload: 3.4, gpa: 2.90 },
+  { code: "EE4146", title: "Data Engineering and Machine Learning", titleZh: "數據工程及機器學習", desc: "Data processing pipelines and machine learning applications.", descZh: "數據處理流程及機器學習應用。", credit: 3, workload: 3.3, gpa: 3.05 },
+  { code: "EE4147", title: "Grid-Connected Power Converters", titleZh: "併網電力轉換器", desc: "Power electronic converters used in grid-connected systems.", descZh: "用於併網系統的電力電子轉換器。", credit: 3, workload: 3.5, gpa: 2.88 },
+  { code: "EE4148", title: "Advanced Power System", titleZh: "進階電力系統", desc: "Advanced topics in electric power systems analysis and operation.", descZh: "電力系統分析及運作的進階主題。", credit: 3, workload: 3.6, gpa: 2.75 },
+  { code: "EE4149", title: "Power Electronics", titleZh: "電力電子學", desc: "Design and control of power electronic converters.", descZh: "電力電子轉換器的設計與控制。", credit: 3, workload: 3.7, gpa: 2.70 },
+  { code: "EE4221", title: "Cloud Computing Systems", titleZh: "雲端運算系統", desc: "Architecture and technologies of cloud computing systems.", descZh: "雲端運算系統的架構及技術。", credit: 3, workload: 3.1, gpa: 3.10 },
+  { code: "EE4316", title: "Mobile Data Networks", titleZh: "流動數據網絡", desc: "Technologies and protocols used in mobile data networks.", descZh: "流動數據網絡使用的技術及協議。", credit: 3, workload: 3.2, gpa: 3.00 }
 ];
 
-// ========== Render Courses ==========
+// ========== Generate 3 comments for each course ==========
+function generateComments(code, title) {
+  const templates = [
+    [
+      { user: "EE Student 2023", text: `This course is quite fundamental. The concepts in ${title} are important for later courses. Workload is manageable if you review regularly.` },
+      { user: "Year 2 Student", text: `Lectures are clear but the tutorials are very useful. Make sure you understand the basic principles early.` },
+      { user: "Anonymous", text: `Good starting point. Not too difficult if you have solid secondary school physics/maths background.` }
+    ],
+    [
+      { user: "CityU EE", text: `${code} requires consistent practice. The final exam can be tricky if you only memorize formulas.` },
+      { user: "Senior Student", text: `Interesting content. Lab sessions help a lot in understanding the theory.` },
+      { user: "2024 Graduate", text: `Useful course for building foundation. Recommend doing past papers.` }
+    ],
+    [
+      { user: "EE Year 3", text: `Workload is medium. Group project (if any) needs good time management.` },
+      { user: "Student A", text: `Professor explains well. Content is relevant to real engineering applications.` },
+      { user: "Anonymous CityUer", text: `A bit theoretical at times, but overall a solid course in the curriculum.` }
+    ]
+  ];
+  const index = code.charCodeAt(2) % 3;
+  return templates[index];
+}
+
+// ========== Render Course List ==========
 function renderCourses(lang) {
   const coreContainer = document.getElementById("coreCourses");
   const electiveContainer = document.getElementById("electiveCourses");
-
   if (!coreContainer || !electiveContainer) return;
 
-  coreContainer.innerHTML = coreCourses.map(c => `
-    <div class="course-item">
+  const renderList = (courses) => courses.map(c => `
+    <div class="course-item" onclick="showCourseDetail('${c.code}')" style="cursor:pointer;">
       <div class="course-top">
         <span class="course-code">${c.code}</span>
         <span class="course-title">${lang === 'zh' ? c.titleZh : c.title}</span>
@@ -220,16 +384,76 @@ function renderCourses(lang) {
     </div>
   `).join("");
 
-  electiveContainer.innerHTML = electiveCourses.map(c => `
-    <div class="course-item">
-      <div class="course-top">
-        <span class="course-code">${c.code}</span>
-        <span class="course-title">${lang === 'zh' ? c.titleZh : c.title}</span>
-        <span class="course-credit">${c.credit} ${lang === 'zh' ? '學分' : 'credits'}</span>
-      </div>
-      <div class="course-desc">${lang === 'zh' ? c.descZh : c.desc}</div>
+  coreContainer.innerHTML = renderList(coreCourses);
+  electiveContainer.innerHTML = renderList(electiveCourses);
+}
+
+// ========== Show Course Detail ==========
+function showCourseDetail(code) {
+  const allCourses = [...coreCourses, ...electiveCourses];
+  const course = allCourses.find(c => c.code === code);
+  if (!course) return;
+
+  const lang = currentLang;
+  const comments = generateComments(course.code, lang === 'zh' ? course.titleZh : course.title);
+
+  document.querySelectorAll('.curriculum-section').forEach(el => el.style.display = 'none');
+  document.querySelector('.page-title').style.display = 'none';
+  document.querySelector('.page-desc').style.display = 'none';
+
+  let detailDiv = document.getElementById('courseDetailView');
+  if (!detailDiv) {
+    detailDiv = document.createElement('div');
+    detailDiv.id = 'courseDetailView';
+    document.getElementById('page-curriculum').appendChild(detailDiv);
+  }
+
+  detailDiv.style.display = 'block';
+  detailDiv.innerHTML = `
+    <button class="btn btn-secondary" onclick="backToList()" style="margin-bottom:20px;">${i18n[lang].back_btn}</button>
+
+    <div class="detail-header">
+      <h2>${course.code} - ${lang === 'zh' ? course.titleZh : course.title}</h2>
+      <p>${lang === 'zh' ? course.descZh : course.desc}</p>
     </div>
-  `).join("");
+
+    <div class="detail-cards">
+      <div class="detail-card">
+        <h4>${i18n[lang].assessment}</h4>
+        <ul>
+          <li>✓ Exam</li>
+          <li>✓ Quizzes</li>
+          <li>✓ Assignments</li>
+          <li>✓ ${course.credit >= 6 ? 'Project' : 'Lab / Tutorial'}</li>
+        </ul>
+      </div>
+      <div class="detail-card">
+        <h4>${i18n[lang].mean_gpa}</h4>
+        <div class="big-number">${course.gpa.toFixed(2)}</div>
+      </div>
+      <div class="detail-card">
+        <h4>${i18n[lang].workload}</h4>
+        <div class="big-number">${course.workload.toFixed(1)} / 5</div>
+      </div>
+    </div>
+
+    <div class="comments-section">
+      <h3>${i18n[lang].comments} (${comments.length})</h3>
+      ${comments.map(c => `
+        <div class="comment-box">
+          <div class="comment-user">${c.user}</div>
+          <div class="comment-text">${c.text}</div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function backToList() {
+  document.getElementById('courseDetailView').style.display = 'none';
+  document.querySelectorAll('.curriculum-section').forEach(el => el.style.display = 'block');
+  document.querySelector('.page-title').style.display = 'block';
+  document.querySelector('.page-desc').style.display = 'block';
 }
 
 // ========== Language Switch ==========
@@ -238,18 +462,15 @@ let currentLang = 'en';
 function setLanguage(lang) {
   currentLang = lang;
   const langBtn = document.getElementById("langBtn");
-  if (langBtn) {
-    langBtn.textContent = lang === 'en' ? '繁體' : 'EN';
-  }
+  if (langBtn) langBtn.textContent = lang === 'en' ? '繁體' : 'EN';
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
-    if (i18n[lang][key]) {
-      el.innerHTML = i18n[lang][key];
-    }
+    if (i18n[lang][key]) el.innerHTML = i18n[lang][key];
   });
 
   renderCourses(lang);
+  populateCompareDropdowns();
 }
 
 // ========== Navigation ==========
@@ -258,23 +479,152 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     e.preventDefault();
     document.querySelectorAll(".nav-links a").forEach(a => a.classList.remove("active"));
     this.classList.add("active");
-
     const page = this.getAttribute("data-page");
     document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
-    const targetPage = document.getElementById("page-" + page);
-    if (targetPage) {
-      targetPage.classList.add("active");
-    }
+    const target = document.getElementById("page-" + page);
+    if (target) target.classList.add("active");
   });
 });
 
-// ========== Language Button ==========
-const langBtn = document.getElementById("langBtn");
-if (langBtn) {
-  langBtn.addEventListener("click", () => {
-    setLanguage(currentLang === 'en' ? 'zh' : 'en');
-  });
+document.getElementById("langBtn")?.addEventListener("click", () => {
+  setLanguage(currentLang === 'en' ? 'zh' : 'en');
+});
+
+// ========== Search ==========
+function searchProgrammes(query) {
+  const q = query.toLowerCase().trim();
+  if (!q) return [];
+  return otherProgrammes.filter(p =>
+    p.name.toLowerCase().includes(q) ||
+    p.fullName.toLowerCase().includes(q) ||
+    p.university.toLowerCase().includes(q)
+  );
+}
+
+function renderSearchResults(results) {
+  const container = document.getElementById("searchResults");
+  if (!container) return;
+
+  if (results.length === 0) {
+    container.innerHTML = `<p class="empty-state">No results found. Try "CityU EE", "HKU EE", or "PolyU EE".</p>`;
+    return;
+  }
+
+  container.innerHTML = results.map(p => `
+    <div class="programme-card">
+      <div class="card-header">
+        <h2>${p.name}</h2>
+        <div class="university">${p.university}</div>
+      </div>
+      <div class="card-body">
+        <div class="indicators">
+          <div class="indicator">
+            <div class="indicator-icon icon-career">💼</div>
+            <div class="indicator-text">
+              <h3>Career Outcomes</h3>
+              <p>${p.career}</p>
+            </div>
+          </div>
+          <div class="indicator">
+            <div class="indicator-icon icon-difficulty">📚</div>
+            <div class="indicator-text">
+              <h3>Course Difficulty</h3>
+              <p>${p.difficulty}</p>
+            </div>
+          </div>
+          <div class="indicator">
+            <div class="indicator-icon icon-internship">🏢</div>
+            <div class="indicator-text">
+              <h3>Internship Opportunities</h3>
+              <p>${p.internship}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a href="${p.link}" target="_blank" class="btn btn-primary">Official Website</a>
+      </div>
+    </div>
+  `).join("");
+}
+
+// ========== Compare ==========
+function populateCompareDropdowns() {
+  const select1 = document.getElementById("compare1");
+  const select2 = document.getElementById("compare2");
+  if (!select1 || !select2) return;
+
+  const options = otherProgrammes.map(p =>
+    `<option value="${p.id}">${p.name} — ${p.university}</option>`
+  ).join("");
+
+  select1.innerHTML = `<option value="">${i18n[currentLang].select1}</option>${options}`;
+  select2.innerHTML = `<option value="">${i18n[currentLang].select2}</option>${options}`;
+}
+
+function compareProgrammes() {
+  const id1 = document.getElementById("compare1").value;
+  const id2 = document.getElementById("compare2").value;
+  const resultDiv = document.getElementById("compareResult");
+
+  if (!id1 || !id2) {
+    resultDiv.innerHTML = `<p class="empty-state">Please select two programmes to compare.</p>`;
+    return;
+  }
+
+  const p1 = otherProgrammes.find(p => p.id === id1);
+  const p2 = otherProgrammes.find(p => p.id === id2);
+
+  resultDiv.innerHTML = `
+    <div class="compare-card">
+      <div class="card-header">
+        <h2>${p1.name}</h2>
+        <div class="university">${p1.university}</div>
+      </div>
+      <div class="card-body">
+        <div class="compare-row"><h4>Career Outcomes</h4><p>${p1.career}</p></div>
+        <div class="compare-row"><h4>Course Difficulty</h4><p>${p1.difficulty}</p></div>
+        <div class="compare-row"><h4>Internships</h4><p>${p1.internship}</p></div>
+      </div>
+    </div>
+    <div class="compare-card">
+      <div class="card-header">
+        <h2>${p2.name}</h2>
+        <div class="university">${p2.university}</div>
+      </div>
+      <div class="card-body">
+        <div class="compare-row"><h4>Career Outcomes</h4><p>${p2.career}</p></div>
+        <div class="compare-row"><h4>Course Difficulty</h4><p>${p2.difficulty}</p></div>
+        <div class="compare-row"><h4>Internships</h4><p>${p2.internship}</p></div>
+      </div>
+    </div>
+  `;
 }
 
 // ========== Init ==========
-renderCourses('en');
+document.addEventListener("DOMContentLoaded", () => {
+  renderCourses('en');
+  populateCompareDropdowns();
+
+  const searchBtn = document.getElementById("searchBtn");
+  const searchInput = document.getElementById("searchInput");
+
+  if (searchBtn && searchInput) {
+    searchBtn.addEventListener("click", () => {
+      const results = searchProgrammes(searchInput.value);
+      renderSearchResults(results);
+    });
+
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        const results = searchProgrammes(searchInput.value);
+        renderSearchResults(results);
+      }
+    });
+  }
+
+  const compareBtn = document.getElementById("compareBtn");
+  if (compareBtn) {
+    compareBtn.addEventListener("click", compareProgrammes);
+  }
+});
